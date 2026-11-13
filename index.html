@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>VERNOS | Inscripción a actividades</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Schibsted+Grotesk:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F7FB;--sf:#E9ECF6;--tx:#12142B;--mu:#4b5078;--ln:#dfe2f0;--navy:#12142B;--y:#F5A800;--p:#F4698C;--o:#F24C00;--g:#1E9E78;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0 0 84px;background:var(--bg);color:var(--tx);font:400 16px/1.55 "Schibsted Grotesk","Segoe UI",system-ui,sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+.hero{background:transparent;color:var(--navy);padding:28px 0 40px;overflow:hidden}.logo{display:none!important}
+.top{display:flex;gap:12px;margin:64px 0 22px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.02em}
+.lg{position:relative;width:38px;height:24px}.lg i{position:absolute;top:0;width:24px;height:24px;border-radius:50%;opacity:.9}
+.lg i:first-child{left:0;background:var(--y)}.lg i:last-child{right:0;background:var(--p)}
+.sim{font-size:13px;background:#FFE2A3;border-radius:99px;padding:6px 14px;color:#12142B}
+.hg{display:flex;flex-direction:column-reverse;gap:34px}
+h1{font-size:clamp(28px,5.4vw,46px);line-height:1.15;margin:0 0 14px;font-weight:500;letter-spacing:-.015em;max-width:20ch}
+.hero p{margin:0 0 20px;max-width:46ch;color:var(--mu)}
+.st{display:flex;gap:26px;flex-wrap:wrap;margin:0;padding:0;list-style:none}
+.st b{display:block;font-size:26px;font-weight:800;color:var(--navy)}.st span{font-size:14px;color:var(--mu)}
+.ven{position:relative;isolation:isolate;aspect-ratio:1.61/1;width:100%;max-width:700px;margin:0 auto}.ven i{position:absolute;top:0;width:62%;aspect-ratio:1;border-radius:50%}
+.ven .c1{left:0;background:#F5AE00}.ven .c2{right:0;background:#F76B8A;mix-blend-mode:multiply}
+.ven b{position:absolute;inset:0;display:grid;place-items:center;font:400 clamp(54px,17vw,150px)/1 Anton,Impact,"Arial Narrow",sans-serif;color:#1B1F3F;letter-spacing:-.01em}
+main{padding:44px 0 30px}h2{font-size:clamp(22px,4vw,30px);margin:0 0 6px;font-weight:800;line-height:1.2}
+.sub{color:var(--mu);margin:0 0 20px}
+.sd{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:40px}
+.sb{text-align:left;font:inherit;color:inherit;background:var(--sf);border:2px solid transparent;border-radius:14px;padding:14px 16px;cursor:pointer}
+.sb:hover{border-color:var(--ln)}.sb[aria-pressed="true"]{border-color:var(--y);background:var(--bg);box-shadow:0 0 0 1px var(--y)}
+.sb strong{display:block;font-size:17px}.sb em{font-style:normal;font-size:14px;color:var(--mu)}
+.sb small{display:block;margin-top:6px;font-size:13px;color:var(--mu)}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+.ch{font:inherit;font-size:14px;color:var(--tx);background:none;border:1.5px solid var(--ln);border-radius:99px;padding:6px 14px;cursor:pointer}
+.ch[aria-pressed="true"]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.row{display:grid;grid-template-columns:14px 1fr auto;gap:6px 16px;padding:18px 0;border-top:1px solid var(--ln);align-items:start}
+.dt{width:14px;height:14px;border-radius:50%;margin-top:7px}
+.row h3{margin:0;font-size:19px;font-weight:600;line-height:1.3}.ej{font-size:13px;color:var(--mu);font-weight:400;margin-left:8px}
+.mt{display:flex;flex-wrap:wrap;gap:4px 18px;margin:6px 0;font-size:14.5px;color:var(--mu)}.mt b{color:var(--tx);font-weight:500}
+.qs{font-size:14.5px;margin:0}.who{font-size:13.5px;color:var(--mu);margin:4px 0 0}
+.act{display:flex;flex-direction:column;align-items:flex-end;gap:8px;min-width:150px}
+.cp{width:150px;font-size:13px;color:var(--mu);text-align:right}.br{height:6px;border-radius:9px;background:var(--sf);margin-top:4px;overflow:hidden}
+.br i{display:block;height:100%;background:var(--g);border-radius:9px}.br.lo i{background:var(--o)}
+.bt{font:inherit;font-weight:600;font-size:15px;border:0;border-radius:10px;padding:10px 18px;cursor:pointer;background:var(--y);color:var(--navy)}
+.bt:hover{filter:brightness(.95)}.bt.sec{background:none;border:1.5px solid var(--ln);color:var(--tx)}
+.bt.done{background:var(--g);color:#fff}
+:focus-visible{outline:3px solid var(--p);outline-offset:2px}
+.pill{background:#1B1F3F;color:#fff;border-radius:99px;font-weight:600;font-size:16px;line-height:1;font-family:inherit;text-decoration:none;box-shadow:0 8px 24px rgba(18,20,43,.28)}
+.tr{position:fixed;z-index:8;top:calc(14px + env(safe-area-inset-top,0px));right:16px;padding:16px 24px}
+.nav{position:fixed;z-index:8;left:12px;right:12px;margin:0 auto;width:max-content;max-width:calc(100% - 24px);bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;gap:2px;padding:6px;overflow-x:auto;background:rgba(27,31,63,.95)}
+.nav button{font:inherit;font-weight:600;font-size:15px;color:#fff;background:none;border:0;padding:12px 14px;border-radius:99px;cursor:pointer;white-space:nowrap}.nav button:hover{background:rgba(255,255,255,.15)}
+[id]{scroll-margin-top:calc(72px + env(safe-area-inset-top,0px))}
+.bl{list-style:none;padding:0;margin:8px 0 0}.bl li{padding:6px 0 6px 22px;position:relative;font-size:15px}.bl li::before{content:"";position:absolute;left:0;top:14px;width:10px;height:10px;border-radius:50%;background:var(--y)}.hw>div:nth-child(2) .bl li::before{background:var(--p)}
+.mine{background:var(--sf);border-radius:14px;padding:18px 20px;margin:36px 0}.mine ul{list-style:none;padding:0;margin:10px 0 0}
+.mine li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:8px 0;border-top:1px solid var(--ln);font-size:15px}
+.hw{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin:12px 0 40px}
+.hw h3{margin:0 0 4px;font-size:17px}.hw p{margin:0;color:var(--mu);font-size:15px}
+details{border-top:1px solid var(--ln);padding:12px 0}summary{cursor:pointer;font-weight:600}details p{color:var(--mu);margin:8px 0 0}
+footer{background:var(--sf);padding:26px 0;font-size:14px;color:var(--mu)}
+.ov{position:fixed;inset:0;background:rgba(10,12,30,.7);display:none;align-items:flex-end;justify-content:center;z-index:9;padding:0}
+.ov.on{display:flex}.md{background:var(--bg);color:var(--tx);width:100%;max-width:520px;max-height:92%;overflow:auto;border-radius:18px 18px 0 0;padding:22px 22px calc(22px + env(safe-area-inset-bottom,0px))}
+@media(min-width:600px){.ov{align-items:center;padding:20px}.md{border-radius:18px}}
+.md h2{font-size:22px}.md label{display:block;font-size:14px;font-weight:500;margin:12px 0 4px}
+.md input[type=text],.md input[type=email],.md input[type=number],.md input[type=tel]{width:100%;font:inherit;padding:10px 12px;border-radius:10px;border:1.5px solid var(--ln);background:var(--bg);color:var(--tx)}
+.er{color:var(--o);font-size:13px;min-height:16px;margin:2px 0 0}.ck{display:flex;gap:10px;align-items:flex-start;font-size:14px;margin:14px 0;font-weight:400}
+.ck input{margin-top:5px}.bx{background:var(--sf);border-radius:12px;padding:12px 14px;margin:12px 0;font-size:15px}.bx p{margin:2px 0}
+.cd{font-size:28px;font-weight:800;letter-spacing:.06em;color:var(--o);margin:4px 0}
+.lk{display:flex;gap:8px}.lk input{flex:1;font-size:13px!important}.rw{display:flex;gap:10px;justify-content:flex-end;margin-top:14px;flex-wrap:wrap}
+@media(max-width:640px){
+.row{grid-template-columns:14px 1fr}.act{grid-column:2;flex-direction:row;align-items:center;justify-content:space-between;min-width:0;flex-wrap:wrap}.cp{text-align:left}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero"><a class="pill tr" href="https://vernosba.netlify.app">Conocé VERNOS</a><div class="w">
+ <div class="top"><a class="logo" href="https://vernosba.netlify.app" style="color:inherit;text-decoration:none"><span class="lg"><i></i><i></i></span>VERNOS</a><span class="sim">Simulación del equipo VERNOS · no es una inscripción oficial</span></div>
+ <div class="hg"><div>
+  <h1>Elegí tu sede, elegí qué hacer y volvé a vernos.</h1>
+  <p>Actividades gratuitas para jóvenes de 18 a 29 años en Estaciones Saludables de la Ciudad. Mirá dónde, cuándo y con quién, y anotate en un minuto.</p>
+  <ul class="st" id="stats"></ul>
+ </div><div class="ven" role="img" aria-label="VERNOS: dos círculos que se superponen"><i class="c1"></i><i class="c2"></i><b>VERNOS</b></div></div>
+</div></header>
+<nav class="pill nav" aria-label="Secciones"><button data-t="sedes">Sedes</button><button data-t="acth">Actividades</button><button data-t="inc">Beneficios</button><button data-t="como">Cómo funciona</button><button data-t="faq">Preguntas</button></nav>
+<main class="w">
+ <h2>1. Elegí tu sede</h2><p class="sub">Cada sede tiene su propia mezcla de actividades.</p>
+ <div class="sd" id="sedes"></div>
+ <h2 id="acth">2. Elegí una actividad</h2><p class="sub" id="sedeInfo"></p>
+ <div class="fl" id="filtros" role="group" aria-label="Filtrar por tipo de actividad"></div>
+ <div id="lista"></div>
+ <section class="mine" id="mine" hidden><h2>Mis inscripciones</h2><ul id="mineList"></ul></section>
+ <h2 id="inc" style="margin-top:44px">Qué conseguís viniendo</h2><p class="sub">Además de conocer gente, quienes más se involucran acceden a beneficios a través de alianzas público-privadas.</p>
+ <div class="hw">
+  <div><h3>Beneficios del día a día</h3><ul class="bl"><li>Descuentos en gastronomía</li><li>Descuentos en movilidad</li><li>Entradas a propuestas culturales</li><li>Becas para cursos y herramientas digitales</li></ul></div>
+  <div><h3>Desarrollo personal y profesional</h3><ul class="bl"><li>Coworking</li><li>Encuentros con emprendedores y creadores</li><li>Charlas y networking</li><li>Festivales y gaming</li></ul></div>
+ </div>
+ <p class="who">Ilustrativo: los beneficios concretos y cómo se obtienen se definen con las alianzas y con otros programas del Gobierno de la Ciudad.</p>
+ <h2 id="como" style="margin-top:44px">Cómo funciona</h2>
+ <div class="hw">
+  <div><h3>Te anotás</h3><p>Elegís sede y actividad, completás tus datos y recibís un código de inscripción.</p></div>
+  <div><h3>Vas a la primera sesión</h3><p>Llegá 10 minutos antes. No hace falta nivel previo ni llevar nada más que ganas.</p></div>
+  <div><h3>Seguís con tu grupo</h3><p>Mismo grupo, mismo día y horario durante todo el piloto. Es la forma de armar vínculos.</p></div>
+ </div>
+ <h2 id="faq">Preguntas frecuentes</h2>
+ <details><summary>¿Cuánto cuesta?</summary><p>Nada. Las actividades y los materiales son gratuitos.</p></details>
+ <details><summary>¿Puedo anotarme en más de una actividad?</summary><p>Sí, hasta en dos de tipos distintos, por ejemplo una deportiva y una artística.</p></details>
+ <details><summary>¿Qué pasa si llueve o hace mucho calor?</summary><p>Te avisamos por mail con un plan B o una reprogramación. Las actividades al aire libre buscan siempre la sombra.</p></details>
+ <details><summary>¿Qué significan las semanas A y B?</summary><p>Los encuentros sociales son cada 15 días. Los grupos A y B se alternan, así que cada uno se reúne una semana por medio.</p></details>
+ <details><summary>¿Qué pasa si me ausento?</summary><p>Nada grave. Si faltás dos veces seguidas, alguien del equipo te escribe para saber cómo estás y ayudarte a volver.</p></details>
+</main>
+<footer><div class="w">VERNOS es una propuesta del Hub Joven 2026. Esta página es una simulación: los cupos, horarios y datos de quienes dictan son ilustrativos y todavía no es una política pública. Coordinarían BA Joven y Bienestar Ciudadano. <a href="https://vernosba.netlify.app" style="color:inherit">Conocé el proyecto completo</a>.</div></footer>
+<div class="ov" id="ov" role="dialog" aria-modal="true" aria-labelledby="mt"><div class="md" id="md"></div></div>
+<script>
+const EJ={d:['Deportivo','var(--y)'],a:['Artístico-cultural','var(--p)'],s:['Social','var(--o)']};
+const DI={d:'Profe de educación física · Bienestar Ciudadano',a:'Tallerista · alianza público-privada',s:'Promotor/a juvenil · BA Joven'};
+const SD=[
+{id:'houssay',n:'Plaza Houssay',z:'Centro',t:'Para quienes llegaron a estudiar a la Ciudad y buscan un lugar donde sentirse parte.'},
+{id:'patricios',n:'Parque Patricios',z:'Sur',t:'Más acceso a actividades culturales y deportivas, gratis y cerca de casa.'},
+{id:'saavedra',n:'Parque Saavedra',z:'Norte',t:'Deporte en grupo y tiempo sin pantallas para conocer gente de verdad.'},
+{id:'palermo',n:'Lagos de Palermo',z:'Norte',t:'Una mezcla pareja de deporte, arte y encuentros sociales al aire libre.'}];
+const Q={Vóley:'Partidos y ejercicios en equipos mixtos. No hace falta nivel previo.',Fútbol:'Partidos con equipos mixtos y parejos, y mate al final.',Dibujo:'Taller con consignas simples: se conversa mientras se dibuja.',Cerámica:'Modelado con materiales incluidos, sin costo para vos.',Mateada:'Ronda de mate, música y dinámicas para conocerse.',Juegos:'Juegos de mesa y de grupo para conocer gente sin presión.',Desconexión:'Dos horas sin pantallas: charla, juegos y actividades presenciales.',Mural:'Pintamos entre todos un mural pensado por el grupo.',Funcional:'Circuito al aire libre, adaptable a cualquier nivel.'};
+const N=[];let k=0;
+function m(s,c,e,nom,q,dias,hora,fr,cu){const id=s+'-'+c.toLowerCase();let t=Math.min(cu,5+((k*13)%(cu-6)));if(k%7===3)t=cu;k++;N.push({id,s,c,e,nom,q:Q[q],dias,hora,fr,cu,t})}
+const V='19:00 a 21:00',S2='Cada 15 días',SA='Cada 15 días (semanas A)',SB='Cada 15 días (semanas B)';
+m('houssay','A2','a','Cerámica','Cerámica','Lunes',V,'Semanal',25);
+m('houssay','D1','d','Vóley','Vóley','Martes y jueves',V,'2 veces por semana',25);
+m('houssay','A1','a','Dibujo','Dibujo','Miércoles',V,'Semanal',25);
+m('houssay','S1','s','Mateada','Mateada','Viernes',V,SA,25);
+m('houssay','S2','s','Juegos','Juegos','Viernes',V,SB,25);
+m('houssay','S3','s','Desconexión digital','Desconexión','Sábado','16:00 a 18:00',SA,25);
+m('patricios','D1','d','Fútbol','Fútbol','Lunes y miércoles',V,'2 veces por semana',25);
+m('patricios','D2','d','Vóley','Vóley','Martes y jueves',V,'2 veces por semana',25);
+m('patricios','A2','a','Cerámica','Cerámica','Viernes',V,'Semanal',25);
+m('patricios','A1','a','Dibujo','Dibujo','Sábado','16:00 a 18:00','Semanal',25);
+m('patricios','S1','s','Mateada y juegos','Mateada','Sábado','18:30 a 20:30',S2,25);
+m('patricios','A3','a','Mural colectivo','Mural','Domingo','16:00 a 18:00','Semanal',25);
+m('saavedra','D1','d','Fútbol','Fútbol','Lunes y miércoles',V,'2 veces por semana',25);
+m('saavedra','D2','d','Vóley','Vóley','Martes y jueves',V,'2 veces por semana',25);
+m('saavedra','A1','a','Dibujo al aire libre','Dibujo','Viernes',V,'Semanal',25);
+m('saavedra','D3','d','Entrenamiento funcional','Funcional','Sábado y domingo','10:00 a 12:00','2 veces por semana',25);
+m('saavedra','S1','s','Mateada','Mateada','Sábado','17:00 a 19:00',SA,25);
+m('saavedra','S2','s','Desconexión digital y juegos','Desconexión','Domingo','17:00 a 19:00',SB,25);
+m('palermo','D1','d','Vóley','Vóley','Lunes y miércoles',V,'2 veces por semana',25);
+m('palermo','D2','d','Fútbol','Fútbol','Martes y jueves',V,'2 veces por semana',25);
+m('palermo','A1','a','Dibujo de paisaje','Dibujo','Viernes',V,'Semanal',25);
+m('palermo','A2','a','Cerámica','Cerámica','Sábado','16:00 a 18:00','Semanal',25);
+m('palermo','S1','s','Mateada','Mateada','Domingo','16:00 a 18:00',SA,25);
+m('palermo','S2','s','Juegos y desconexión digital','Juegos','Domingo','16:00 a 18:00',SB,25);
+let sede='houssay',eje='all',reg={};
+try{reg=JSON.parse(localStorage.getItem('vernos-reg')||'{}')}catch(e){reg={}}
+const $=i=>document.getElementById(i);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const save=()=>{try{localStorage.setItem('vernos-reg',JSON.stringify(reg))}catch(e){}};
+const sd=id=>SD.find(x=>x.id===id);
+const go=el=>{try{scrollTo(0,el.getBoundingClientRect().top+(window.pageYOffset||0)-72)}catch(e){el.scrollIntoView()}};
+const taken=a=>Math.min(a.cu,a.t+(reg[a.id]&&!reg[a.id].wl?1:0));
+function stats(){const tot=N.reduce((s,a)=>s+a.cu,0);$('stats').innerHTML=`<li><b>${SD.length}</b><span>sedes</span></li><li><b>${N.length}</b><span>grupos</span></li><li><b>${tot}</b><span>lugares gratuitos</span></li><li><b>2 h</b><span>por encuentro</span></li>`}
+function sedes(){$('sedes').innerHTML=SD.map(s=>{const g=N.filter(a=>a.s===s.id);return`<button class="sb" data-s="${s.id}" aria-pressed="${s.id===sede}"><strong>${s.n}</strong><em>Zona ${s.z}</em><small>${s.t}</small><small>${g.length} grupos</small></button>`}).join('');
+ $('sedes').querySelectorAll('button').forEach(b=>b.onclick=()=>{sede=b.dataset.s;eje='all';render();go($('acth'))})}
+function filtros(){const o=[['all','Todas'],['d','Deportivas'],['a','Artístico-culturales'],['s','Sociales']];
+ $('filtros').innerHTML=o.map(x=>`<button class="ch" data-e="${x[0]}" aria-pressed="${eje===x[0]}">${x[1]}</button>`).join('');
+ $('filtros').querySelectorAll('button').forEach(b=>b.onclick=()=>{eje=b.dataset.e;render()})}
+function lista(){const s=sd(sede);$('sedeInfo').textContent=`${s.n}, zona ${s.z}. ${s.t}`;
+ const L=N.filter(a=>a.s===sede&&(eje==='all'||a.e===eje));
+ $('lista').innerHTML=L.map(a=>{const t=taken(a),q=a.cu-t,r=reg[a.id],full=q<=0;
+  const btn=r?`<button class="bt done" data-a="${a.id}">${r.wl?'En lista de espera':'Inscripto/a'}</button>`:`<button class="bt" data-a="${a.id}">${full?'Anotarme en la lista de espera':'Inscribirme'}</button>`;
+  return`<article class="row"><span class="dt" style="background:${EJ[a.e][1]}"></span><div><h3>${a.nom}<span class="ej">${EJ[a.e][0]}</span></h3>
+  <div class="mt"><span><b>Cuándo:</b> ${a.dias}, ${a.hora}</span><span><b>Frecuencia:</b> ${a.fr}</span><span><b>Dónde:</b> ${sd(a.s).n}</span></div>
+  <p class="qs">${a.q}</p><p class="who">Lo dicta: ${DI[a.e]}</p></div>
+  <div class="act"><div class="cp">${full?'Cupo completo':`Quedan ${q} de ${a.cu} lugares`}<div class="br ${q<=5?'lo':''}"><i style="width:${t/a.cu*100}%"></i></div></div>${btn}</div></article>`}).join('');
+ $('lista').querySelectorAll('button[data-a]').forEach(b=>b.onclick=()=>open(b.dataset.a))}
+function mine(){const ids=Object.keys(reg);$('mine').hidden=!ids.length;
+ $('mineList').innerHTML=ids.map(id=>{const a=N.find(x=>x.id===id),r=reg[id];return a?`<li><span><strong>${a.nom}</strong> · ${sd(a.s).n} · ${a.dias}, ${a.hora}<br><small>${r.wl?'Lista de espera':'Inscripción'} ${esc(r.code)}</small></span><button class="bt sec" data-c="${id}">Cancelar</button></li>`:''}).join('');
+ $('mineList').querySelectorAll('button').forEach(b=>b.onclick=()=>{delete reg[b.dataset.c];save();render()})}
+function render(){sedes();filtros();lista();mine()}
+function close(){$('ov').classList.remove('on');try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}
+function link(id){return location.href.split('#')[0]+'#'+id}
+function open(id){const a=N.find(x=>x.id===id);if(!a)return;sede=a.s;render();
+ try{location.hash=id}catch(e){}
+ const full=a.cu-taken(a)<=0,r=reg[id];
+ const info=`<div class="bx"><p><strong>${a.nom}</strong> · ${EJ[a.e][0]}</p><p>${sd(a.s).n}, zona ${sd(a.s).z}</p><p>${a.dias}, ${a.hora} · ${a.fr}</p><p>Lo dicta: ${DI[a.e]}</p></div>`;
+ const lk=`<label for="lk">Link de inscripción de esta actividad</label><div class="lk"><input id="lk" type="text" readonly value="${esc(link(id))}"><button class="bt sec" id="cp" type="button">Copiar</button></div>`;
+ if(r){$('md').innerHTML=`<h2 id="mt">${r.wl?'Estás en la lista de espera':'Ya estás inscripto/a'}</h2>${info}<p>Tu código:</p><p class="cd">${esc(r.code)}</p>${lk}<div class="rw"><button class="bt sec" id="x" type="button">Cerrar</button></div>`;wire(id);return}
+ $('md').innerHTML=`<h2 id="mt">${full?'Anotate en la lista de espera':'Inscribite'}</h2>${info}
+ <form id="f" novalidate><label for="n">Nombre y apellido</label><input id="n" type="text" autocomplete="name"><p class="er" id="en"></p>
+ <label for="m">Email</label><input id="m" type="email" autocomplete="email"><p class="er" id="em"></p>
+ <label for="e">Edad (de 18 a 29)</label><input id="e" type="number" min="18" max="29" inputmode="numeric"><p class="er" id="ee"></p>
+ <label for="b">Barrio</label><input id="b" type="text"><p class="er" id="eb"></p>
+ <label class="ck"><input id="c" type="checkbox"><span>Acepto que el equipo VERNOS me contacte por mail sobre esta actividad.</span></label><p class="er" id="ec"></p>
+ <div class="rw"><button class="bt sec" id="x" type="button">Cancelar</button><button class="bt" type="submit">${full?'Anotarme en la lista':'Confirmar inscripción'}</button></div></form>${lk}`;
+ wire(id);$('f').onsubmit=ev=>{ev.preventDefault();submit(a,full)};setTimeout(()=>$('n').focus(),50)}
+function wire(id){$('ov').classList.add('on');$('x').onclick=close;
+ $('cp').onclick=()=>{const i=$('lk');i.select();try{navigator.clipboard.writeText(i.value)}catch(e){}$('cp').textContent='Copiado'}}
+function submit(a,full){const v=i=>$(i).value.trim();let ok=true;const set=(i,t)=>{$(i).textContent=t;if(t)ok=false};
+ set('en',v('n').split(/\s+/).length<2?'Escribí tu nombre y apellido.':'');
+ set('em',/^\S+@\S+\.\S+$/.test(v('m'))?'':'Escribí un email válido, por ejemplo nombre@correo.com.');
+ const ed=+v('e');set('ee',ed>=18&&ed<=29?'':'VERNOS es para jóvenes de 18 a 29 años.');
+ set('eb',v('b')?'':'Contanos en qué barrio vivís.');set('ec',$('c').checked?'':'Tildá la casilla para poder inscribirte.');
+ if(!ok)return;const code=(full?'LE-':'VB-')+Math.random().toString(36).slice(2,7).toUpperCase();
+ reg[a.id]={code,name:v('n'),wl:full};save();render();
+ $('md').innerHTML=`<h2 id="mt">${full?'Quedaste en la lista de espera':'Listo, '+esc(v('n').split(/\s+/)[0])+', ya estás inscripto/a'}</h2><div class="bx"><p><strong>${a.nom}</strong></p><p>${sd(a.s).n} · ${a.dias}, ${a.hora}</p><p>${a.fr}</p></div><p>Tu código:</p><p class="cd">${code}</p>
+ <p>${full?'Si se libera un lugar, te avisamos a ':'Te mandamos la confirmación a '}${esc(v('m'))}. Llegá 10 minutos antes de la primera sesión. Cada encuentro suma constancia para acceder a los beneficios.</p><p class="who">Simulación: no se envió ningún mail ni se guardaron datos en un servidor.</p>
+ <div class="rw"><button class="bt" id="x" type="button">Listo</button></div>`;$('x').onclick=close}
+$('ov').addEventListener('click',e=>{if(e.target===$('ov'))close()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+function hash(){const h=location.hash.slice(1);if(h&&N.some(a=>a.id===h))open(h)}
+document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{const t=$(b.dataset.t);if(t)go(t)});
+addEventListener('hashchange',hash);stats();render();hash();
+</script>
+</body>
+</html>
